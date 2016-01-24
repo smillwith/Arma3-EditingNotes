@@ -2,15 +2,22 @@
 
 A bunch of misc scripts and links that I've found useful.
 
-## Links ##
-1. https://community.bistudio.com/wiki/Description.ext
-2. 
+## Mission/Scenario Building ##
+1. [BI Wiki](https://community.bistudio.com/wiki/Main_Page)
+  1. [Description.ext](https://community.bistudio.com/wiki/Description.ext)
+  2. [2D Editor](https://community.bistudio.com/wiki/2D_Editor)
+    1. [Waypoints](https://community.bistudio.com/wiki/2D_Editor:_Waypoints)
+
+## Mods, Projects, etc ##
+1. [Authentic Gameplay Modification](https://github.com/KoffeinFlummi/AGM/wiki)
+2. [Advanced Combat Environment 3 - ACE 3](http://ace3mod.com/wiki/feature/)
+3. [Enhanced Movement](http://www.armaholic.com/page.php?id=27224)
 
 ## Debugging Missions ##
 
-//Sides can be East, West, Resistance, Guer, Civ
-
 ```
+//Disables "shooting" on all units for the given side.
+//Sides can be East, West, Resistance, Guer, Civ
 { if ((side _x) == Resistance) then { _x disableAI "target"; _x disableAI "autotarget"; }; } forEach allUnits;
 ```
 
