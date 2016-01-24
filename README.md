@@ -4,9 +4,12 @@ A bunch of misc scripts and links that I've found useful.
 
 ## Mission/Scenario Building ##
 1. [BI Wiki](https://community.bistudio.com/wiki/Main_Page)
-  1. [Description.ext](https://community.bistudio.com/wiki/Description.ext)
-  2. [2D Editor](https://community.bistudio.com/wiki/2D_Editor)
+  1. [Scripting Commands List](https://community.bistudio.com/wiki/Category:Scripting_Commands_Arma_3)
+  2. [All Items List](https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Items)  
+  3. [2D Editor](https://community.bistudio.com/wiki/2D_Editor)
     1. [Waypoints](https://community.bistudio.com/wiki/2D_Editor:_Waypoints)
+  4. [Description.ext](https://community.bistudio.com/wiki/Description.ext)
+2. [Arma 3 Editing Forums](https://forums.bistudio.com/forum/161-arma-3-editing/)
 
 ## Mods, Projects, etc ##
 1. [Authentic Gameplay Modification](https://github.com/KoffeinFlummi/AGM/wiki)
@@ -15,7 +18,7 @@ A bunch of misc scripts and links that I've found useful.
 
 ## Debugging Missions ##
 
-```
+```SQF
 //Disables "shooting" on all units for the given side.
 //Sides can be East, West, Resistance, Guer, Civ
 { if ((side _x) == Resistance) then { _x disableAI "target"; _x disableAI "autotarget"; }; } forEach allUnits;
