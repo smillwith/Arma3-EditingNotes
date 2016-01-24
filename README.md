@@ -36,7 +36,7 @@ Place this in a trigger that fires when the mission loads:
 { _x call coolmod_fnc_unitAssignLoadout; } forEach ["b_unit1", "b_unit2", "b_unit3"];
 ```
 
-###"funcs.sqf"""
+###funcs.sqf###
 
 ```SQF
 coolmod_fnc_unitAssignLoadout = 
