@@ -111,3 +111,36 @@ _headgear = _allHeadgear select floor random count _allHeadgear;
 _unit addHeadgear _headgear;
 ```
 
+##Misc Sandbox things##
+
+```SQF
+//Fire smoke grenade
+unitname fire ["SmokeShellMuzzle","SmokeShellMuzzle","Smokeshellred"];
+
+
+//Opens the side doors for a GhostHawk
+b_ghosthawk1 animateDoor ['door_R', 1];
+b_ghosthawk1 animateDoor ['door_L', 1];
+
+
+
+//This worked, I knew the crewman not the vehicle name
+vehicle b_crewman1 animateDoor ['door_R', 1];
+
+
+//Add stuff for me when I start
+this assignItem "Binocular";
+
+
+//Go dark
+{ _x addPrimaryWeaponItem "muzzle_snds_H"; _x addPrimaryWeaponItem "muzzle_snds_H_MG"; _x addPrimaryWeaponItem "muzzle_snds_338_black"; _x linkItem "NVGoggles"; } forEach units recongroup;
+
+
+//Go dark alternate
+//acc_flashlight
+//acc_pointer_IR
+
+//Go light
+{ _x removePrimaryWeaponItem "acc_pointer_IR"; _x removePrimaryWeaponItem "muzzle_snds_H"; _x removePrimaryWeaponItem "muzzle_snds_H_MG"; _x removePrimaryWeaponItem "muzzle_snds_338_black"; _x unlinkItem "NVGoggles"; } forEach units recongroup;
+```
+
