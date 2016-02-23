@@ -20,6 +20,10 @@ A bunch of misc scripts and links that I've found useful.
 2. [Advanced Combat Environment 3 - ACE 3](http://ace3mod.com/wiki/feature/)
 3. [Enhanced Movement](http://www.armaholic.com/page.php?id=27224)
 
+## Misc ##
+1. [Arma 3 Items Sheets - Google Docs](https://docs.google.com/spreadsheets/d/16scX4_d8d8IltXjQXMdYNsSVr1YbV2BsBK1vW3rrxi4/edit#gid=0)
+
+
 ## Debugging Missions ##
 
 ```SQF
@@ -297,11 +301,8 @@ deleteVehicle leftrearlight; leftrearlight = "#lightpoint" createVehicleLocal ge
 //for a panther
 b_unitVehicle setVariable ["rearLightOn", 0, true]; b_unitVehicle addAction ["Rear Lights Off", {deleteVehicle leftrearlight; deleteVehicle rightrearlight; b_unitVehicle setVariable ["rearLightOn", 0, true];},[],1.5,false,true,"","b_unitVehicle getVariable ""rearLightOn"" == 1 AND Alive(_target) AND driver _target == _this"];  b_unitVehicle addAction ["Rear Lights On", {leftrearlight = "#lightpoint" createVehicleLocal getPos b_unitVehicle; leftrearlight setLightBrightness 0.15;  leftrearlight setLightAmbient [1, 1, 0.5];  leftrearlight setLightColor [1, 1, 0.5]; leftrearlight setLightUseFlare true; leftrearlight setLightFlareSize 0.5; leftrearlight setLightFlareMaxDistance 500; leftrearlight attachTo [b_unitVehicle, [-1,-5, -0.31]]; rightrearlight = "#lightpoint" createVehicleLocal getPos b_unitVehicle; rightrearlight setLightBrightness 0.15;  rightrearlight setLightAmbient [1, 1, 0.5];  rightrearlight setLightColor [1, 1, 0.5]; rightrearlight setLightUseFlare true; rightrearlight setLightFlareSize 0.5; rightrearlight setLightFlareMaxDistance 500; rightrearlight attachTo [b_unitVehicle, [1,-5, -0.31]]; b_unitVehicle setVariable ["rearLightOn", 1, true];},[], 1.5, false, true, "", "b_unitVehicle getVariable ""rearLightOn"" == 0 AND Alive(_target) AND driver _target == _this"];
 
----=
-
 //What is Splendid camera targeting
 BIS_fnc_camera_target
-
 
 //Command a unit to throw a grenade, smoke grenade or chemlight?
 //ChemlightRedMuzzle
