@@ -1,6 +1,15 @@
-# Arma3-EditingNotes
+# Arma3 Scneario Editing Notes
 
 A bunch of misc scripts and links that I've found useful.
+
+## Contents ##
+//TODO: Add table of contents
+1. Links
+2. Debugging
+3. Mission scripts
+4. Other things
+
+--
 
 ## Mission/Scenario Building ##
 1. [BI Wiki](https://community.bistudio.com/wiki/Main_Page)
@@ -334,4 +343,4 @@ b_engineer1 selectWeapon "SmokeShellBlueMuzzle"; b_engineer1 fire ["SmokeShellBl
 
 
 ```
-
+Here's some new content at the bottom. Should cause a conflict.
