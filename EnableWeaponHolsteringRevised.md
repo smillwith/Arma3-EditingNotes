@@ -19,7 +19,8 @@ This completely revised version of Enable Weapon Holstering includes the followi
 
 ## Download EnableWeaponHolsteringRevised.sqlf below.
 
-[EnableWeaponHolstering.sqf](https://raw.githubusercontent.com/smillwith/Arma3-EditingNotes/master/EnableWeaponHolsteringRevised.sqf)
+* [EnableWeaponHolstering.sqf (View)](https://github.com/smillwith/Arma3-EditingNotes/blob/master/EnableWeaponHolsteringRevised.sqf)
+* [EnableWeaponHolstering.sqf (Raw)](https://raw.githubusercontent.com/smillwith/Arma3-EditingNotes/master/EnableWeaponHolsteringRevised.sqf)
 
 ## Known Issues
 
