@@ -25,7 +25,7 @@ _this addAction ["Equip binoculars*", {_unit = _this select 1; _unit selectWeapo
 //Action: "Hide weapon" (Primary)
 //Condition: I am requesting my own action
 //  I have a primary weapon
-/  /I'm currently holding my primary weapon
+//  I'm currently holding my primary weapon
 _this addAction ["Hide weapon*", {_unit = _this select 1; _unit action ["SwitchWeapon", _unit, _unit, 100];}, [], 1.5, false, true, "", "_this == _target && primaryWeapon _target != """" && currentWeapon _target == primaryWeapon vehicle _target"];
 
 //Action: "Hide weapon" (Launcher)
