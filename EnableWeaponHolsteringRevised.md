@@ -10,10 +10,10 @@ This completely revised version of Enable Weapon Holstering includes the followi
 
 ```SQF
   //One player - place in init.sqf:
-  [player] execVM "EnableWeaponHolsteringRevised.sqf";
+  player execVM "EnableWeaponHolsteringRevised.sqf";
   
   //All playable units - place in init.sqf:
-  { [_x] execVM "EnableWeaponHolsteringRevised.sqf"; } forEach playableUnits;
+  { _x execVM "EnableWeaponHolsteringRevised.sqf"; } forEach playableUnits;
   
 ```
 
